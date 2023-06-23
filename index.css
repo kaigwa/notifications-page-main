@@ -15,7 +15,8 @@
 */
 
 
-@import url('https://fonts.google.com/specimen/Plus+Jakarta+Sans');
+/* @import url('https://fonts.google.com/specimen/Plus+Jakarta+Sans'); */
+
     *{
         margin: 0;
         padding: 0;
@@ -23,16 +24,25 @@
     }
 
     body{
+        color: hsl(219, 14%, 63%);
+        background-color:hsl(224, 21%, 14%);
         width: 375px;
         height: 100%;
         margin: auto;
-        font-size: 16px;
-        font-family: 'Plus Jakarta Sans', sans-serif;
+        padding: 20px;
+        font-size: 12px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .container{
+        background-color: hsl(0, 0%, 100%);
         width: 300px;
-        /* height: 600px; */
+        height: 100%;
+        padding: 20px 10px 10px;
+        margin: auto;
     }
 
     .header{
@@ -41,13 +51,67 @@
         justify-content: space-between;
     }
 
+    .N{
+        display: flex;
+        flex-direction: row;
+        gap: 6px;
+    }
+
+    h4{
+        color: black;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    .number{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        width: 22px;
+        height: 17px; 
+        color:hsl(0, 0%, 100%) ;
+        background-color: hsl(219, 85%, 26%);
+    }
+ 
     button{
+        color:hsl(219, 14%, 63%) ;
         border: none;
         background-color: transparent;
     }
 
-    ul>li{
+    .dot{
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color:hsl(1, 90%, 64%) ;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 7px;
+        padding-top: 10px;
+    }
+
+    li{
         list-style: none;
+        display: inline-flex;
+        gap: 10px;
+        background-color: hsl(210, 60%, 98%);
+        border-radius: 3px;
+        height: fit-content;
+        padding: 10px;
+
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
     }
 
     img{
@@ -56,6 +120,34 @@
         height: 30px;
         border-radius: 50%;
     }
+
+    .user{
+        color: black;
+        font-weight: bold;
+    }
+
+    .C{
+        color: hsl(219, 85%, 26%);
+        font-weight: 700;
+    }
+
+    strong{
+        color: hsl(219, 12%, 42%);
+    }
+
+    .message{
+        border: 0.9px solid hsl(219, 14%, 63%);
+        border-radius: 2.6px;
+        padding: 10px;
+
+    }
+
+    #picture{
+        width: 30px;
+        height: 30px;
+        border-radius: 3px; 
+    }
+
     .attribution {
          font-size: 11px; 
          text-align: center; 

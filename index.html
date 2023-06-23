@@ -13,7 +13,10 @@
 <body>
   <div class="container">
     <div class="header">
-      <h4>Notifications <span>3</span></h4>
+      <div class="N">
+        <h4>Notifications</h4>
+        <span class="number">3</span>
+      </div>
       <button>Mark all as read</button>
     </div>
  
@@ -22,10 +25,9 @@
         <div>
           <img src="./assets/images/avatar-mark-webber.webp" alt="">
         </div>
-        <div>
-          <span>Mark Webber</span>
-          <span> reacted to your recent post My first tournament today!</span>
-          <span></span>
+        <div class="content">
+          <p><span class="user">Mark Webber</span> reacted to your recent post <strong>My first tournament today!</strong></p>
+          <span class="dot"></span>
           <span>1m ago</span>
         </div>
       </li>
@@ -34,10 +36,9 @@
         <div>
           <img src="./assets/images/avatar-angela-gray.webp" alt="">
         </div>
-        <div>
-          <span>Angela Gray</span>
-          <span>followed you</span>
-          <span></span>
+        <div class="content" >
+          <span><span class="user">Angela Gray</span> followed you</span>
+          <span class="dot"></span>
           <span>5m ago</span>
         </div>
       </li>
@@ -46,25 +47,23 @@
         <div>
           <img src="./assets/images/avatar-jacob-thompson.webp" alt="">
         </div>
-        <div>
-          <span>Jacob Thompson</span>
-          <p>has joined your group<span>Chess Club</span></p>
-          <span></span>
-          <span>1m ago</span>
+        <div class="content">
+          <span><span class="user">Jacob Thompson</span> has joined your group <span class="C">Chess Club</span></span>
+          <span class="dot"></span>
+          <span>1day ago</span>
         </div>
       </li>
   
       <li>
         <div><img src="./assets/images/avatar-rizky-hasanuddin.webp" alt=""></div>
         <div>
-          <div>
-            <span> Rizky Hasanuddin</span>
-            <span>sent you a private message</span>
-            <span>5 days ago</span>
+          <div class="content">
+            <span><span class="user">Rizky Hasanuddin</span> sent you a private message</span>
+            <span>5days ago</span>
           </div>
 
           <div>
-            <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+            <p class="message">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
               I'm already having lots of fun and improving my game.
             </p>
           </div>
@@ -75,9 +74,8 @@
         <div>
           <img src="./assets/images/avatar-kimberly-smith.webp" alt="">
         </div>
-        <div>
-          <span>Kimberly Smith</span>
-          <span>commented on your picture</span>
+        <div class="content">
+          <span><span class="user">Kimberly Smith</span> commented on your picture</span>
           <span>1week ago</span>
         </div>
         <img id="picture" src="./assets/images/image-chess.webp" alt="">
@@ -87,9 +85,8 @@
         <div>
           <img src="./assets/images/avatar-nathan-peterson.webp" alt="">
         </div>
-        <div>
-          <span>Nathan Peterson</span>
-          <p>reacted to your recent post<span>5 end-game strategies to increase your win rate</span> </p>
+        <div class="content">
+          <span><span class="user">Nathan Peterson</span> reacted to your recent post <strong>5 end-game strategies to increase your win rate</strong> </p>
           <span>2weeks ago</span>
         </div>
       </li>
@@ -98,9 +95,8 @@
         <div>
           <img src="./assets/images/avatar-anna-kim.webp" alt="">
         </div>
-        <div>
-          <span>Anna Kim</span>
-          <p>left the group <span>Chess Club</span></p>
+        <div class="content">
+          <p><span class="user">Anna Kim</span> left the group <span class="C">Chess Club</span></p>
           <span>2weeks ago</span>
         </div>
       </li>
