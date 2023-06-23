@@ -1,10 +1,68 @@
 /* CSS */
 
+/* 
+- Weights: 500, 800
+
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)
+*/
+
+
+@import url('https://fonts.google.com/specimen/Plus+Jakarta+Sans');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        width: 375px;
+        height: 100%;
+        margin: auto;
+        font-size: 16px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .container{
+        width: 300px;
+        /* height: 600px; */
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    button{
+        border: none;
+        background-color: transparent;
+    }
+
+    ul>li{
+        list-style: none;
+    }
+
+    img{
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
     .attribution {
          font-size: 11px; 
          text-align: center; 
         }
     .attribution a { 
-        color: hsl(228, 45%, 44%); 
+        color: hsl(228, 45%, 44%);
+        text-decoration: none;
+        font-size: 13px; 
     }
   
