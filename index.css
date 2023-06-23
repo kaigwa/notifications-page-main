@@ -79,6 +79,11 @@
         color:hsl(219, 14%, 63%) ;
         border: none;
         background-color: transparent;
+        cursor: pointer;
+    }
+
+    button:hover{
+        color:hsl(219, 85%, 26%) ;
     }
 
     .dot{
@@ -124,22 +129,39 @@
     .user{
         color: black;
         font-weight: bold;
+        cursor: pointer;
+    }
+
+    .user:hover{
+        color: hsl(219, 85%, 26%);
     }
 
     .C{
         color: hsl(219, 85%, 26%);
         font-weight: 700;
+        cursor: pointer;
     }
 
     strong{
+        cursor: pointer;
         color: hsl(219, 12%, 42%);
+    }
+
+    strong:hover{
+        color: hsl(219, 85%, 26%);
     }
 
     .message{
         border: 0.9px solid hsl(219, 14%, 63%);
         border-radius: 2.6px;
         padding: 10px;
+        cursor: pointer;
+    }
 
+    .message:hover{
+        color:hsl(219, 12%, 42%) ;
+        border: none;
+        background-color: hsl(205, 33%, 90%)
     }
 
     #picture{
