@@ -1,3 +1,4 @@
+// js-code start
 // create variables
 const btn = document.querySelector('button');
 const noteNumber = document.querySelector('.number');

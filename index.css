@@ -1,20 +1,4 @@
-/* CSS */
-
-/* 
-- Weights: 500, 800
-
-- Red: hsl(1, 90%, 64%)
-- Blue: hsl(219, 85%, 26%)
-- White: hsl(0, 0%, 100%)
-- Very light grayish blue: hsl(210, 60%, 98%)
-- Light grayish blue 1: hsl(211, 68%, 94%)
-- Light grayish blue 2: hsl(205, 33%, 90%)
-- Grayish blue: hsl(219, 14%, 63%)
-- Dark grayish blue: hsl(219, 12%, 42%)
-- Very dark blue: hsl(224, 21%, 14%)
-*/
-
-
+/* start with mobile device section */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
     *{
@@ -23,9 +7,10 @@
         box-sizing: border-box;
     }
 
+    /* main container design section */
     body{
         color: hsl(219, 14%, 63%);
-        background-color:hsl(224, 21%, 14%);
+        background-color:hsl(210, 71%, 81%);
         width: 375px;
         height: 100%;
         margin: auto;
@@ -34,7 +19,7 @@
         font-family: 'Plus Jakarta Sans',sans-serif;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
     .container{
@@ -43,8 +28,10 @@
         height: 100%;
         padding: 20px 10px 10px;
         margin: auto;
+        border-radius: 6px;
     }
 
+    /* header section styles */
     .header{
         display: flex;
         flex-direction: row;
@@ -86,12 +73,13 @@
         color:hsl(219, 85%, 26%) ;
     }
 
+    /* notification list section styles */
     .dot{
-        /* display: none; */
         width: 4px;
         height: 4px;
         border-radius: 50%;
         background-color:hsl(1, 90%, 64%) ;
+        z-index: 1;
     }
 
     ul{
@@ -112,8 +100,7 @@
     }
 
     .new{
-        background-color: hsl(210, 60%, 98%);
-
+        background-color: hsl(205, 33%, 90%);
     }
 
     li:active{
@@ -125,13 +112,6 @@
         flex-direction: column;
         justify-content: flex-start;
 
-    }
-
-    img{
-        vertical-align: middle;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
     }
 
     .user{
@@ -172,12 +152,21 @@
         background-color: hsl(205, 33%, 90%)
     }
 
+    /* image section styles */
+    img{
+        vertical-align: middle;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
     #picture{
         width: 30px;
         height: 30px;
         border-radius: 3px; 
     }
 
+    /* source || coder section styles */
     .attribution {
          font-size: 11px; 
          text-align: center; 
@@ -188,3 +177,19 @@
         font-size: 13px; 
     }
   
+/* responsive design for desktop devices*/
+@media screen and (min-width: 768px) {
+    body{
+        width: 900px;
+        height: 100%;
+        padding: 60px;
+    }
+
+    .container{
+        margin: auto;
+        width: 625px;
+        height: 100%;
+        padding: 20px;
+    }
+
+}
