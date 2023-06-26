@@ -2,10 +2,12 @@
 const btn = document.querySelector('button');
 const userName = document.querySelectorAll('.user');
 const noteNumber = document.querySelector('.number');
-const redDot = document.querySelectorAll('.dot')
+const noteContent = document.querySelectorAll('.content');
+const redDot = document.getElementsByClassName('dot')
 
 // event listener with callBack function;
 btn.addEventListener('click', () =>{
-    redDot.style.display = 'none';
-    // console.log(userName[2])
+   noteContent.classList.remove('dot')
+    
+    // console.log(noteContent)
 })
